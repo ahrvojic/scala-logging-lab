@@ -1,0 +1,24 @@
+{
+  "configuration": {
+    "status": "warn",
+    "appenders": {
+      "Console": {
+        "name": "Console",
+        "target": "SYSTEM_OUT",
+        "JsonTemplateLayout": {
+          "eventTemplateUri": "classpath:layout.json"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "info",
+        "appenderRef": [
+          {
+            "ref": "Console"
+          }
+        ]
+      }
+    }
+  }
+}
